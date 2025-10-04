@@ -1,0 +1,8 @@
+# Requirements for KuKirin G4 BLE Control
+# Python 3.10+
+
+# Core BLE library: scanning, connecting, notifications
+bleak>=0.22.0
+
+# Optional: faster event loop on macOS/Linux (ignored on Windows)
+uvloop>=0.17.0; sys_platform != "win32"
